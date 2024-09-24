@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APK Sales Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to APK Sales</h1>
+    </header>
+    <main>
+        <section id="product-info">
+            <h2>Our Amazing APK</h2>
+            <p>Description of your APK and its features.</p>
+            <button id="buy-button">Buy Now</button>
+        </section>
+        
+        <section id="purchase-process" class="hidden">
+            <div id="agreement" class="step">
+                <h3>Agreement</h3>
+                <p>Please read and agree to our terms of service.</p>
+                <textarea readonly>Terms of service text here...</textarea>
+                <button id="agree-button">I Agree</button>
+            </div>
+            
+            <div id="pricing" class="step hidden">
+                <h3>Select Your Plan</h3>
+                <select id="plan-select">
+                    <option value="7">7 days - $5</option>
+                    <option value="30">30 days - $15</option>
+                    <option value="365">365 days - $100</option>
+                </select>
+                <button id="select-plan-button">Next</button>
+            </div>
+            
+            <div id="payment" class="step hidden">
+                <h3>Pay with Binance Pay</h3>
+                <button id="binance-pay-button">Pay Now</button>
+                <button id="verify-button">Verify Purchase</button>
+            </div>
+            
+            <div id="verification" class="step hidden">
+                <h3>Verify Your Purchase</h3>
+                <input type="file" id="verification-photo" accept="image/*">
+                <textarea id="verification-message" placeholder="Enter your message here..."></textarea>
+                <button id="send-verification-button">Send Verification</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
